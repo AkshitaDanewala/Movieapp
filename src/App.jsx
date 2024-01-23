@@ -2,7 +2,10 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Nav from "./components/Nav"
 import Home from "./components/Home"
-import Popular from "./components/Popular"
+import Popular from "./components/Popular.jsx"
+import Toprated from "./components/Toprated.jsx"
+import Upcoming from "./components/Upcoming.jsx"
+
 const App = () => {
 
 
@@ -11,10 +14,14 @@ const App = () => {
       <Nav/>
       <Routes>
         
-        <Route index element={<Home/>}/>
-<Route path= "movie/:id" element={<h1>Movie world</h1>}/>
-<Route path= "movies/:type" element={<Popular/>}/>
-<Route path= "/*" element={<h1>Error page</h1>}/>
+        <Route  index element={<Home/>}/>
+        <Route path="/movies/popular" element={<Popular/>}/>
+        <Route index element={<Toprated/>}/>
+        <Route index element={<Upcoming/>}/>
+
+
+
+
 
 
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
-import Popular from "./Popular"
+
 const Home = () => {
 
 const [popularMovies, setpopularMovies] = useState([])
@@ -31,7 +31,7 @@ showStatus={false}
 > 
 
 {popularMovies.map((movie, id)=>(
-    <Link to={`/movie/${movie.id}`}  >
+    <Link to={`/movie/${movie.id}`} key={id}  >
     
     <div key={id} className="posterimg h-[511px] ">
         <img src={`http://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} alt=""  className='w-full m-auto block'/>
@@ -57,8 +57,6 @@ showStatus={false}
 
 
 </Carousel >
-
-<Popular/>
 
    
 
