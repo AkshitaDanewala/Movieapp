@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-const Popular = () => {
+import { Link } from 'react-router-dom'
 
+const Popular = () => {
   const [popularMovies, setpopularMovies] = useState([])
 
 useEffect(()=>{
@@ -13,29 +14,31 @@ useEffect(()=>{
 })
 
   return (
-
+    
     <div className=' maindiv h-screen w-full bg-green-200 '>
 
-<div className="moviebox h-[218vh] w-full bg-blue-200 px-5 py-5">
-<h1 className='text-2xl font-bold ml-3'>Popular Movie</h1>
+<div className="moviebox h-[305vh] w-full bg-black px-5 py-5">
+<h1 className='text-2xl font-bold ml-3 text-white'>Popular Movie</h1>
 
 {popularMovies.map((poster, index)=>{
 
 return(
 
-  <div key={index} className='posterdiv h-[50vh] w-56 rounded border-2 border-black inline-block ml-4 my-2 relative'>
+  <div key={index} className='posterdiv h-[69vh] w-56 rounded border-2 border-black inline-block ml-4 my-2 relative'>
 
-<img src={`http://image.tmdb.org/t/p/original${poster.backdrop_path}`} alt="" className='h-full' />
+<img src={`http://image.tmdb.org/t/p/original${poster.backdrop_path}`} alt="" className='h-[49vh]' />
 
-<div className='descriptionbox h-[19vh] w-full  absolute top-[62%] px-3 py-3 text-white ' style={{backgroundColor:"rgba(0, 0, 0, 0.345"}}>
-<h2 className='text-[1.1vmax]'>{poster.title}</h2>
-<h4>{poster.release_date}</h4>
-<h4>{poster.vote_average}</h4>
+<div className='descriptionbox h-[20vh] w-full  absolute top-[71%]   px-3 py-3 text-white' >
+ 
+  <span>Title:</span> <span className='text-[1.2vmax] ml-3'>{poster.title}</span>
+ <h2> <span>Release Date:</span> <span className='ml-3'>{poster.release_date}</span></h2> 
+ <h2><span>Ratings:</span> <span className='text-[1.2vmax] text-red-500 ml-3'>{poster.vote_average}</span></h2>
+
+
+
 </div>
 
   </div>
-
-
 
 )
 
@@ -54,6 +57,13 @@ return(
 
 {/* maindivend */}
     </div>
+    
+    
+   
+
+
+
+   
   )
 }
 
