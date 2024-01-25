@@ -14,6 +14,8 @@ fetch("https://api.themoviedb.org/3/movie/popular?api_key=c48ac7a0d7524be5ea4ad4
     })
 
 
+  
+
   return (
    <>
 
@@ -58,7 +60,8 @@ showStatus={false}
 
 </Carousel >
 
-   
+
+
 
 
     {/* maindivend */}

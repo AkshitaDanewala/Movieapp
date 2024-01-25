@@ -61,7 +61,7 @@ useEffect(()=>{
     
     
     
-    <div className="popularTV h-full w-full bg-black h-[280vh] w-full  px-5 py-5 ">
+    <div className="popularTV h-full w-full bg-black h-[283vh] w-full  px-5 py-5 ">
     
     <h1 className='text-2xl font-bold ml-3 text-white'>Top- Rated TV</h1>
     
