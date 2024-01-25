@@ -16,8 +16,8 @@ const App = () => {
         
         <Route  index element={<Home/>}/>
         <Route path="/movies/popular" element={<Popular/>}/>
-        <Route index element={<Toprated/>}/>
-        <Route index element={<Upcoming/>}/>
+        <Route path="/movies/top_rated" element={<Toprated/>}/>
+        <Route path="/movies/upcoming" element={<Upcoming/>}/>
 
 
 
