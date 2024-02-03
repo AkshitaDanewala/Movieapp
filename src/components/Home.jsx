@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
+import Popular from "../components/Popular"
 
 const Home = () => {
 
@@ -61,7 +62,7 @@ showStatus={false}
 </Carousel >
 
 
-
+<Popular/>
 
 
     {/* maindivend */}
@@ -71,6 +72,3 @@ showStatus={false}
 }
 
 export default Home
-
-// api key = "c48ac7a0d7524be5ea4ad45855a94c2d"
-// api token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjNDhhYzdhMGQ3NTI0YmU1ZWE0YWQ0NTg1NWE5NGMyZCIsInN1YiI6IjY1YWU4YTJkZDEwMGI2MDEwYzgyNjY1MCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MQLBQHig_MUZd0NZRRiMwP_OKhIahA8TUwAag_ivrIw"

@@ -12,7 +12,7 @@ const [search, setsearch] = useState([])
 <nav className='h-12 w-full bg-black text-white flex items-center justify-center gap-5 text-[1.6vmax]'>
 
 <div className="logo">
-  <img src="" alt="" className='h-10 w-10 bg-red-200' />
+  <img src="https://i.pinimg.com/736x/e4/3a/2a/e43a2af43ffd9dabf88a3a5829518d74.jpg" alt="" className='h-14 w-14 ' />
 </div>
 
 
@@ -21,8 +21,6 @@ const [search, setsearch] = useState([])
     <Link to="/movies/top_rated"  className='hover:text-red-500'>Top Rated</Link>
     <Link to="/movies/upcoming"  className='hover:text-red-500'>Upcoming</Link>
 
-<input type="search" placeholder='search here' className='text-black' value={search}  onChange={(e)=> setsearch(e.target.value)}/>
-<button >search</button>
 
 </nav>
 
@@ -33,3 +31,8 @@ const [search, setsearch] = useState([])
 }
 
 export default Nav
+
+
+
+
+

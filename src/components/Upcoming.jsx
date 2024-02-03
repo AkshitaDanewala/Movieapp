@@ -17,18 +17,18 @@ useEffect(()=>{
  
 <div className=' maindiv h-screen w-full bg-green-200 '>
 
-<div className="moviebox h-[280vh] w-full bg-black px-5 py-5 ">
+<div className="moviebox h-[280vh] w-full bg-black px-5 py-14 whitespace-nowrap overflow-x-auto"  style={{scrollbarWidth: "none"}}>
 <h1 className='text-2xl font-bold ml-3 text-white'>Upcoming Movies</h1>
 
 {upcomingMovie.map((poster, index)=>{
 
 return(
 
-  <div key={index} className='posterdiv  h-[63vh] w-56 rounded border-2 border-black  inline-block ml-4 my-2 relative'>
+  <div key={index} className='posterdiv  h-[63vh] w-[26%] rounded border-2 border-black  inline-block ml-5 my-2 relative'>
 
 <img src={`http://image.tmdb.org/t/p/original${poster.backdrop_path}`} alt="" className='h-[40vh] rounded' />
 
-<div className='descriptionbox h-[23vh] w-full  absolute top-[63%]   px-3 py-3 text-white' >
+<div className='descriptionbox h-[18vh] w-full  absolute top-[71%]   px-3 py-3 text-white' >
  
   <span>Title:</span> <span className='text-[1.2vmax] ml-3'>{poster.original_title}</span>
  <h2> <span>Release Date:</span> <span className='ml-3'>{poster.release_date}</span></h2> 
