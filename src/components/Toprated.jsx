@@ -23,7 +23,7 @@ useEffect(()=>{
 
   return (
    
-    <div className=' maindiv h-screen w-full bg-green-200 '>
+    <div className=' maindiv h-screen w-full  '>
 
     <div className="moviebox  w-full bg-black  px-5 py-5 whitespace-nowrap overflow-x-auto" style={{scrollbarWidth: "none"}}>
     <h1 className='text-2xl font-bold ml-3 text-white'>Top- Rated Movie</h1>
